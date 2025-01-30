@@ -10,9 +10,9 @@ public class LoginPage extends BasePage{
 
     public  By signin_btn = By.xpath("//input[@id='dl-login-inpage']");
 
-    public  By error_msg1 = By.xpath("//div[contains(text(),'Login was unsuccessful. Please correct the errors ')]");
+    public  By error_msg = By.xpath("//div[contains(text(),'Login was unsuccessful. Please correct the errors ')]");
 
-    public By error_msg3 =By.id("PhoneOrEmail_Popup-error");
+    public By email_error_msg =By.xpath("//span[@id='PhoneOrEmail_Popup-error']");
 
 
 
