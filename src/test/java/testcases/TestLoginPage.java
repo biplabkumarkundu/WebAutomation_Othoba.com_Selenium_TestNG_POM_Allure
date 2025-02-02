@@ -50,7 +50,7 @@ public class TestLoginPage extends DriverSetup {
         loginPage.writeOnElement(loginPage.password_input_box,"bk12345");
         loginPage.clickOnElement(loginPage.signin_btn);
         Assert.assertTrue(loginPage.is_element_visible(loginPage.signin_btn));
-        System.out.println(loginPage.getElement(loginPage.error_msg).getText());
+      //  System.out.println(loginPage.getElement(loginPage.error_msg).getText());
         Assert.assertEquals(loginPage.getElement(loginPage.error_msg).getText(),"Login was unsuccessful. Please correct the errors and try again.\nPhoneNumber is not valid.");
         Assert.assertEquals(loginPage.getElement(loginPage.error_msg).getAttribute("class"),"required-red mb-5 text-center login-error-list-style validation-summary-errors");
 

@@ -10,7 +10,7 @@ public class HomePage extends BasePage{
 
     public By signup_btn = By.xpath("//a[@class='login sign-in header-design-color']");
 
-    public By register_btn=By.xpath("//a[normalize-space()='Sign Up']");
+    public By register_btn=By.xpath("//a[normalize-space()='Register']");
 
     public By logout_btn=By.xpath("//span[normalize-space()='Log out']");
 

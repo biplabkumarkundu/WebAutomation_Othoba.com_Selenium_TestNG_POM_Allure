@@ -2,7 +2,9 @@ package pages;
 
 
 import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.Select;
 
+import javax.lang.model.element.Element;
 import java.io.ByteArrayInputStream;
 
 import static utilities.DriverSetup.getDriver;
@@ -24,6 +26,12 @@ public class BasePage {
     public void writeOnElement(By locator, String text){
 
         getElement(locator).sendKeys(text);
+    }
+    public void  selectOnElement(By locator,String value){
+        getElement(locator).click();
+        WebElement el=getElement(locator);
+        Select select=new Select(el);
+        select.selectByVisibleText(value);
     }
 
     public void loadAnWebPage(String url){
